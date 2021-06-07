@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    height: 5em;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+row{
+    /* position: relative; */
+    width: 100%;
+}
+.bg-img {
+    height:100%;
+    width: 100%;
+}
+.over-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    
+}
+.over-bg li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    margin-left: 550px;
+    
+} 
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+}
+.main-nav a:hover{
+    color:red
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: purple;
+    /* color: black; */
+}
+
+/* ---------------------------------------------*/
+/*  YOGA LETTER SECTION  */
+/*----------------------------------------------*/
+
+.yoga-letters {
+    display: flex;
+    flex-wrap: wrap;
+}
+.yoga-letter {
+    padding: 1em;  /* measuring unit relative to font size */
+    display: flex;
+    box-sizing: border-box;
+    width:50%;
+    /* background-color: yellow; */
+}
+.letter-content {
+    margin: 1em;
+/* background-color: #4CAF50; */
+    flex-direction: column;
+}
+.yoga-letters-heading {
+    font-size: 2em;
+    font-weight: 800;
+}
+.yoga-letter img {
+    width: 25%;
+  }
+
+.yogas {
+    display: flex;
+}
+.yogas div {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  /* background-color: aqua; */
+  align-items: center;
+  text-align: center;
+  }
+.yogas div img {
+    width: 8em;
+    margin-bottom: .5em;
+    /* background-color: bisque; */
+}
+
+.long-para{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 10%;
+}
+
+
+
+/* ---------------------------------------------*/
+/*  HEADINGS  */
+/*----------------------------------------------*/
+h1,
+h2,
+h3{
+    
+    font-weight: 300;
+    text-transform: uppercase;
+    
+    ;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 200%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    
+}
+
+
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* ---------------------------------------------*/
+/*  SECTIONS  */
+/*----------------------------------------------*/
+
+section{
+    padding: 50px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.practice{
+    background-color: bisque;
+    height: 100%;
+    
+}
+
+.letters{
+    background-color:cornsilk;
+    height: 100%;
+    padding-left: 70px;
+    padding-right: 50px;
+}
+
+
+/* ---------------------------------------------*/
+/*  FOOTER  */
+/*----------------------------------------------*/
+.footer{
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    position: absolute;
+    display: flex;
+    background-color: aquamarine;
+    /* height: 100%; */
+    /* background-image: url(img/bg-img-last.jpg); */
+    position: absolute;
+}
+.footer img{
+    
+    height: 100vh;
+    width: 100vw;  
+}
+
+.footer-letter{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: left;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    
+}
+
+.over-footer{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: -10%;
+}
+.footer-small{
+    display: flex;
+    /* flex-direction: column; */
+    
+}
+.about,
+.support,
+.company{
+    padding-right: 20px;
+    font-size: 140%;
+    font-weight: 600;
+    box-sizing: border-box;
+    width: 10%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    
+}
+.footer-content {
+    margin: 1em;
+    /* background-color: #4CAF50; */
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 10%;
+    font-weight: 500;
+    /* padding-bottom: 10px; */
+}
+.newsletter{
+    margin-left: 35%;
+    font-size: 400%;
+    align-content: center;
+    
+    /* margin-bottom: 20px; */
+}
+.over-footer button{
+    margin-left: 80%;
+    margin-top: 20px;
+}
+.email{
+    margin-top: 80px;
+    margin-left: 50px; 
+    
+    border: none;
+}
+#t{
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    /* border-bottom: black; */
+}
+
+/* ---------------------------------------------*/
+/* CALENDER SECTION  */
+/*----------------------------------------------*/
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+.calender-section>div{
+    display: flex;
+    flex-direction: row;
+}
+
+.calender{
+    width: 100%;
+    /* margin: .5rem; */
+    margin: .5rem 1rem ;
+}
+.month-name {
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:  1.5rem 0rem;
+    background-color: gainsboro;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: .5rem;
+}
+.nav-to {
+    height: 1rem;
+}
+.weekdays, .month-dates {
+    display: flex;
+    flex-direction: row!important;
+    flex-wrap: wrap;
+}
+.weekdays>div, .month-dates>div{
+    font-size: 1.5rem;
+    display: flex;
+    width: 14.28%;
+    flex-wrap: wrap;
+    /* height: 5.35vw; */
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.weekdays>div{
+    color: red;
+}
+section{
+    padding: 50px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.practice{
+    background-color: bisque;
+    height: 100%;    
+}
+.letters{
+    background-color:cornsilk;
+    height: 100%;
+    padding-left: 70px;
+    padding-right: 50px;
+}
+.highlight { 
+    border-radius: .5rem;
+}
+.event-13 {    
+    background-color: green;  
+    color: white; 
+}
+.event-17 {    
+    background-color: black;
+    color: white;
+}
+.event-28 {    
+    background-color: red;   
+    color: white;
+} */
+
+/* 
+    calender-events
+*/
+.calender-events{
+    width: 100vw;
+    display: flex;
+    background-color: #4CAF50;
+    font-size: 1rem;
+    flex-direction: column;
+}
+.calender-event{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    box-sizing: border-box;    
+    /* margin: .5rem 0; */
+}
+.event-date{
+    /* border: solid .01em red;     */
+    font-size: 1.5rem;
+    background-color: gainsboro;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin: .5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.event-details{
+    margin: .5rem;
+    margin-right: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+.event-title {
+    margin: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.event-description {
+    margin: 1rem;
+    text-align: justify;
+}
+.bell-icon{
+    height: 1.5rem;
+    margin-left: 1rem;
+    /* background-color: #fff; */
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
