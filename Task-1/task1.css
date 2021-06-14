@@ -1,0 +1,19 @@
+body{
+    text-align: center; 
+    font-size: 30px; 
+    display: block;
+}
+button{
+    padding: 15px 32px; 
+    background-color: lightgreen;
+    font-size: 20px;
+}
+.para{
+    background-color: bisque;
+    display: block;
+    padding: 15px 15px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    width: auto;
+}
