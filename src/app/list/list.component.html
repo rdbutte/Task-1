@@ -1,0 +1,38 @@
+<!-- <p>list works!</p> -->
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-light bg-primary">
+  <div class="container-fluid">
+    <h1 style="color: aliceblue;">Angular CRUD</h1>
+    <div class="d-flex">
+      <button type="button" class="btn btn-success" routerLink="add/0">Add Employee</button>
+    </div>
+  </div>
+</nav>
+<table class="table mt-3 m-lg-5">
+  <thead>
+    <tr>
+      <th scope="col">Employee ID</th>
+      <th scope="col">Employee Name</th>
+      <th scope="col">Employee email</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td> {{employee.id}} </td>
+      <td> {{employee.firstName}} {{employee.lastName}} </td>
+      <td> {{employee.email}} </td>
+      <td>
+        <button class="btn btn-outline-primary mx-3" [routerLink]="['view',employee.id]">View</button>
+        <button class="btn btn-info" [routerLink]="['edit',employee.id]">Update</button>
+        <button class="btn btn-danger mx-3" (click)='onDelete(employee.id!)'>Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

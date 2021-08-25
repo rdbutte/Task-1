@@ -1,0 +1,35 @@
+<!-- <p>register works!</p> -->
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+<div class="mt-5 m-lg-5">
+  <form (ngSubmit)="onSubmit(formValue)" #formValue="ngForm">
+    <div class="form-group">
+      <label>Employee ID</label>
+      <input type="number" class="form-control" [ngModel]="employee.id" name="id" required>
+    </div>
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" class="form-control" [ngModel]="employee.firstName" name="firstName" required minlength="6"
+        pattern="[a-zA-Z]*">
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" class="form-control" [ngModel]="employee.lastName" name="lastName" required minlength="5"
+        pattern="[a-zA-Z]*">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" class="form-control" [ngModel]="employee.email" name="email" required>
+    </div> <br>
+    <div class="form-group">
+      <button class="btn btn-success" type="submit" [disabled]='!formValue.valid'>Save</button>
+      <button class="btn btn-secondary mx-3 " (click)="cancelFun()">Cancel</button>
+    </div>
+  </form>
+</div>
